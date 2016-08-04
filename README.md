@@ -1,11 +1,13 @@
-# Marlin 3D Printer Firmware
+# Marlin 3D Printer Firmware - RAMPS 1.4
 
 <img align="top" width=175 src="buildroot/share/pixmaps/logo/marlin-250.png" />
 
 Additional documentation can be found at [The Marlin Documentation Project](https://www.marlinfw.org/).
 Please test this firmware and inform us if it misbehaves in any way, volunteers are standing by!
 
-## Release Candidate -- Marlin 1.1.0-RC6 - 31 July 2016
+##Note that I have a branch for the ZRIB board from the "Afinibot" machines
+
+## Release Candidate -- Marlin 1.1.0-RC6
 This is a branch where I put my own personal tweak to the Marlin FW
 I am currently using it on my machine and it's working perfectly.
 
