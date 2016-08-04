@@ -63,7 +63,7 @@
 #define KILL_PIN           -1
 
 #define HEATER_0_PIN       13 // (extruder)
-#define HEATER_1_PIN       10 //-1 in original
+#define HEATER_1_PIN       -1
 #define HEATER_2_PIN       -1
 
 #if ENABLED(SANGUINOLOLU_V_1_2)
@@ -112,10 +112,10 @@
     #if ENABLED(U8GLIB_ST7920) //SPI GLCD 12864 ST7920 ( like [www.digole.com] ) For Melzi V2.0
 
       #if MB(MELZI) // Melzi board
-        #define LCD_PINS_RS     28 //CS chip select /SS chip slave select
+        #define LCD_PINS_RS     30 //CS chip select /SS chip slave select
         #define LCD_PINS_ENABLE 29 //SID (MOSI)
-        #define LCD_PINS_D4     10 //SCK (CLK) clock
-        #define BEEPER_PIN      -1 // Pin 27 is taken by LED_PIN, but Melzi LED does nothing with Marlin so this can be used for BEEPER_PIN. You can use this pin with M42 instead of BEEPER_PIN.
+        #define LCD_PINS_D4     17 //SCK (CLK) clock
+        #define BEEPER_PIN      27 // Pin 27 is taken by LED_PIN, but Melzi LED does nothing with Marlin so this can be used for BEEPER_PIN. You can use this pin with M42 instead of BEEPER_PIN.
       #else         // Sanguinololu 1.3
         #define LCD_PINS_RS      4
         #define LCD_PINS_ENABLE 17
@@ -141,12 +141,12 @@
 
   #else // !DOGLCD - Standard Hitachi LCD controller
 
-    #define LCD_PINS_RS         28
-    #define LCD_PINS_ENABLE     29
-    #define LCD_PINS_D4         10
-    #define LCD_PINS_D5         11
-    #define LCD_PINS_D6         16
-    #define LCD_PINS_D7         17
+    #define LCD_PINS_RS          4
+    #define LCD_PINS_ENABLE     17
+    #define LCD_PINS_D4         30
+    #define LCD_PINS_D5         29
+    #define LCD_PINS_D6         28
+    #define LCD_PINS_D7         27
 
   #endif // !DOGLCD
 
